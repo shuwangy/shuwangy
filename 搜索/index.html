@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>头部搜索</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css"/>
+    <script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js" ></script>
+</head>		
+<style type="text/css">
+	
+/*搜索页*/
+	.hearders_sesarch{
+		background: #ffffff;
+		height: 50px;
+		position: fixed;
+		top: 0;
+		padding:0 45px 0 10px;
+	}
+	.hearders_sesarch .hearders_search_select{
+		font-size: 13px;
+		color: #666666;
+		position: absolute;
+		left: 20px;
+		top:18px;
+	}
+	.hearders_sesarch .fa-caret-down{
+		font-size: 15px;
+		color: #666666;
+		position: absolute;
+		left: 50px;
+		top:17px;
+	}
+	.hearders_sesarch .hearders_search_cancel{
+		font-size: 13px;
+		color: #666666;
+		position: absolute;
+		right: 10px;
+		top:18px;
+	}
+	.hearders_search_input{
+		width: 100%;
+		background: #f5f5f5;
+		height: 30px;
+		border-bottom-left-radius: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		border-top-right-radius: 15px;
+		margin-top: 10px;
+		overflow: hidden;
+		padding-left: 50px;
+	}
+	.hearders_search_input input{
+		width: 100%;
+		height: 30px;
+		font-size: 13px;
+		border: 0px;
+		outline: none;
+		padding: 0 10px;
+		background: #f5f5f5;
+	}
+	.hearders_search_select_pp{
+		position: absolute;
+		top: 50px;
+		left: 10px;
+		width: 150px;
+		height: auto;
+		background: rgba(0,0,0,0.8);
+		border-radius: 3px;
+	}
+	.hearders_search_select_pp .li{
+		line-height: 50px;
+		color: #e5e5e5;
+		position: relative;
+		padding-left:50px ;
+	}
+	.hearders_search_select_pp .li img{
+		height: 17px;
+		vertical-align: middle;
+		margin-top: -3px;
+		position: absolute;    
+		left: 14px;
+   		top: 20px;
+	}
+	.hearders_search_select_pp .li span{
+		display: block;
+		width: 100%;
+		border-top: 1px solid #e5e5e5;
+	}
+	.hearders_search_select_pp .li:first-child span{
+		border-top: 0px !important;
+	}
+	.hearders_search_select_pp .top{
+		position: absolute;
+		top: -10px;
+		left: 20px;
+		height: 0px;
+		width: 0px;
+		border-bottom: 10px solid rgba(0,0,0,0.8);
+		border-left: 10px solid rgba(0,0,0,0);
+		border-right: 10px solid rgba(0,0,0,0);
+		z-index: 10;
+	}
+/*搜索页-end*/
+</style>
+<body>	
+	
+	<div class="hearders_sesarch auto">
+		<div class="hearders_search_select">
+			<span>商品</span>
+		</div>
+		<i class="fa fa-caret-down"></i>
+		<div class="hearders_search_input">
+			<input type="" name="" id="" value="" placeholder="搜索您需要的商品" />
+		</div>
+		<span class="hearders_search_cancel">取消</span>
+		<div class="hearders_search_select_pp hide">
+			<div class="li auto">
+				<img src="../image/pro_search.png"/><span>产品</span>
+			</div>
+			<div class="li auto">
+				<img src="../image/store_search.png"/><span>店铺</span>
+			</div>
+			<div class="top"></div>
+		</div>
+	</div>
+	 
+</body>	
+<script>
+	$(".hearders_search_select").click(function(){
+		if($(".hearders_search_select_pp").hasClass("hide")){
+			$(".hearders_search_select_pp").removeClass("hide")
+		}else{
+			$(".hearders_search_select_pp").addClass("hide")
+		}
+	})
+	$(".hearders_search_select_pp .li").click(function(){
+			$(".hearders_search_select_pp").addClass("hide")
+	})
+</script>
+</html>		

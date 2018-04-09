@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>订单列表</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+</head>		
+<style type="text/css">
+	.order_list{
+		height: auto;
+	}
+	.order_list_li{
+		background: white;
+		padding: 0 10px;
+	}
+	.order_list_li_top{
+		height: 45px;
+		line-height: 45px;
+		position: relative;
+	}
+	.order_list_li_top .leftname{
+		color: #999999;
+	}
+	.order_list_li_top .leftnum{
+		color: #333333;
+	}
+	.order_list_li_top .status{
+		color: #ffaa00;
+		position: absolute;
+		right: 0;
+	}
+	.order_list_li_content{
+		height: 120px;
+	}
+	.order_list_li_content_t{
+		height: 70px;
+		position: relative;
+	}
+	.order_list_li_proimg{
+		position: absolute;
+	}
+	.order_list_li_proimg img{
+		height: 70px;
+	}
+	.order_list_li_context{
+		padding:0px 0px 0px 80px;
+		position: relative;
+	}
+	.order_list_li_context span{
+		display: block;
+	}
+	.order_list_li_context .num{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+	.order_list_li_context .text{
+		line-height: 25px;
+		
+	}
+	.order_list_li_context .price{
+		line-height: 25px;
+		color: #fb1818;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.order_list_li_content_b{
+		height: 50px;
+		line-height: 50px;
+		border-bottom: 1px solid #dedede;
+		font-size: 13px;
+		color: #333333;
+	}
+	.order_list_li_bottom{
+		height: 50px;
+	}
+	.order_list_li_bottom span{
+		padding: 8px 15px;
+		float: right;
+		margin-top: 12px;
+		margin-left: 10px;
+		border-radius: 15px;
+		font-size: 13px;
+	}
+	.pay_button{
+		color: white;
+		background: #ffaa00;
+	}
+	.deletepay_button{
+		color: #666666;
+		border: 1px solid #dedede;
+	}
+</style>
+<body>		
+	<div class="order_list auto">
+		<div class="order_list_li auto">
+			<div class="order_list_li_top auto">
+				<span class="leftname">订单号：</span><span class="leftnum">81699866885599</span><span class="status">待付款</span>
+			</div>
+			<div class="order_list_li_content auto">
+				<div class="order_list_li_content_t auto">
+					<div class="order_list_li_proimg">
+						<img src="../image/1.jpg"/>
+					</div>
+					<div class="order_list_li_context">
+						<span class="num">x1</span>
+						<span class="text">科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干原味400g</span>
+						<span class="price">￥99.00</span>
+					</div>
+				</div>
+				<div class="order_list_li_content_b auto">
+					<span>共1件商品  需支付：￥99.00</span>
+				</div>
+			</div>
+			<div class="order_list_li_bottom auto">
+				<span class="pay_button">付款</span>
+				<span class="deletepay_button">取消订单</span>
+			</div>
+		</div>
+		<div class="divider"></div>	
+		<div class="order_list_li auto">
+			<div class="order_list_li_top auto">
+				<span class="leftname">订单号：</span><span class="leftnum">81699866885599</span><span class="status">交易成功</span>
+			</div>
+			<div class="order_list_li_content auto">
+				<div class="order_list_li_content_t">
+					<div class="order_list_li_proimg">
+						<img src="../image/2.jpg"/>
+					</div>
+					<div class="order_list_li_context">
+						<span class="num">x1</span>
+						<span class="text">科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干原味400g</span>
+						<span class="price">￥99.00</span>
+					</div>
+				</div>
+				<div class="order_list_li_content_b">
+					<span>共1件商品  需支付：￥99.00</span>
+				</div>
+			</div>
+			<div class="order_list_li_bottom auto">
+				<span class="pay_button">再次购买</span>
+			</div>
+		</div>	
+	</div>
+</body>	
+</html>		

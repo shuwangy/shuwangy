@@ -1,0 +1,44 @@
+
+	.user_info{
+		height: auto;
+	}
+	.user_info_name{
+		font-size: 14px;
+		color: #333333;
+	}
+	.user_info_header{
+		position: relative;
+		padding-left: 10px;
+		line-height: 80px;
+	}
+	.user_info_right{
+		position: absolute;
+		right: 10px;
+		top: 0px;
+	}
+	.user_info_header .user_info_right .right{
+		vertical-align: middle;
+		height: 13px;
+	}
+	.user_info_header .user_info_right .phpto{
+		vertical-align: middle;
+		height: 35px;
+		border-radius: 50%;
+		background: #008500;
+		margin-right: 10px;
+	}
+	.user_info_list{
+		position: relative;
+		padding-left: 10px;
+		line-height: 45px;
+	}
+	.user_info_list .user_info_right .right{
+		margin-top: -2px;
+		height: 13px;
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+	.user_info_list .user_info_right span{
+		color: #666666;
+		font-size: 13px;
+	}

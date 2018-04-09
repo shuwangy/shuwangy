@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>我的地址-论坛商城</title>
+    	<link rel="stylesheet" type="text/css" href="../css/style.css"/>	
+    	<link rel="stylesheet" href="../css/normalize.css" />
+    	<script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js" ></script>
+	</head>
+	<style type="text/css">
+		
+/*收货地址*/
+
+.address_box_li{
+	height: auto;
+	background: white;
+	padding-left: 10px;
+}
+.address_box_li_top{
+	height: auto;
+	padding: 10px 10px;
+	border-bottom: 1px solid #f1f1f1;
+	position: relative;
+}
+.address_box_li_top span{
+	display: block;
+	line-height: 25px;
+}
+.address_box_li_top .name{
+	color: #333333;
+	font-size: 14px;
+}
+.address_box_li_top .name label{
+	margin-left: 10px;
+}
+.address_box_li_top .address{
+	color: #828282;
+	font-size: 13px;
+}
+.address_box_li_bottom{
+	height: auto;
+	line-height: 45px;
+	padding: 0px 10px;
+	color: #666666;
+	font-size: 14px;
+}
+.address_box_li_bottom .default{
+	float: left;
+	position: relative;
+}
+.address_box_li_bottom .default .input{
+	position: absolute;
+	left: 0;
+	top: 11px;
+    width: 23px;
+    height: 23px;
+    opacity: 0;
+    z-index: 10;
+}
+.address_box_li_bottom .default img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+.address_box_li_bottom .edit{
+	float: right;
+}
+.address_box_li_bottom .delete{
+	float: right;
+	margin-left: 20px;
+}
+.address_button_bottom{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	background: #ffb205;
+	color: white;
+}
+
+/*收货地址-end*/
+
+	</style>
+	<body>
+			<div class="address_box auto">
+				<div data-id="1" class="address_box_li auto">
+					<div class="address_box_li_top auto">
+						<span class="name">王义书 <label>18866411550</label></span>
+						<span class="address">山东省济南市菏泽市定陶区黄店镇付楼行政村</span>
+					</div>
+					<div class="address_box_li_bottom auto">
+						<span class="default"><img src="../image/is.png" alt="" />
+						<input onclick="adressget()" class="input" checked="ture" type="radio" name="address" id="" value="" />默认地址</span>
+						<span class="delete">删除</span>
+						<span class="edit">编辑</span>
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div data-id="2" class="address_box_li auto">
+					<div class="address_box_li_top auto">
+						<span class="name">王义书 <label>18866411550</label></span>
+						<span class="address">山东省济南市菏泽市定陶区黄店镇付楼行政村</span>
+					</div>
+					<div class="address_box_li_bottom auto">
+						<span class="default"><img src="../image/no.png" alt="" />
+						<input onclick="adressget()" class="input" checked="ture" type="radio" name="address" id="" value="" />默认地址</span>
+						<span class="delete">删除</span>
+						<span class="edit">编辑</span>
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div data-id="3" class="address_box_li auto">
+					<div class="address_box_li_top auto">
+						<span class="name">王义书 <label>18866411550</label></span>
+						<span class="address">山东省济南市菏泽市定陶区黄店镇付楼行政村</span>
+					</div>
+					<div class="address_box_li_bottom auto">
+						<span class="default"><img src="../image/no.png" alt="" />
+						<input onclick="adressget()" class="input" checked="ture" type="radio" name="address" id="" value="" />默认地址</span>
+						<span class="delete">删除</span>
+						<span class="edit">编辑</span>
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div class="divider"></div>		
+				<div class="divider"></div>		
+				<div class="divider"></div>		
+				<div class="divider"></div>		
+			</div>
+			<div onclick="location='add_address.html'" class="address_button_bottom">
+				<span>添加新地址</span>
+			</div>
+	</body>
+	<script type="text/javascript">
+		function adressget(){
+			var adressid;
+			$(".address_box_li .input").each(function(){
+				if($(this).prop("checked")==true){
+					$(this).parents(".address_box_li").find("img").attr("src","../image/is.png")
+					adressid =$(this).parents(".address_box_li").attr("data-id")
+				}else{
+					$(this).parents(".address_box_li").find("img").attr("src","../image/no.png")
+				}
+			})
+			console.log(adressid)
+		}
+	</script>
+</html>

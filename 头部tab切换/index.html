@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js" ></script>
+</head>		
+<style>	
+	.hearder_tab{
+		height: 45px;
+		line-height: 45px;
+		background: white;
+	}
+	.hearder_tab ul {
+	}
+	.hearder_tab ul li{
+		width: 33.33%;
+		float: left;
+		text-align: center;
+		color: #333333;
+		font-weight: bold;
+	}
+	.hearder_tab ul .active{
+		color: #ffaa00;
+		position: relative;
+	}
+	.hearder_tab ul .active:after{
+	    position: absolute;
+	    right: 10px;
+	    bottom: 2px;
+	    left: 40%;
+		width: 20%;
+	    height: 2px;
+	    content: '';
+	    -webkit-transform: scaleY(.5);
+	    transform: scaleY(.5);
+	    background-color: #ffaa00;
+	    z-index: 10;
+	}
+</style>
+<body>		
+	<div class="hearder_tab auto">
+		<ul class="auto">
+			<li class="active">
+				<span>全部</span>
+			</li>
+			<li>
+				<span>已过期</span>
+			</li>
+			<li>
+				<span>已使用</span>
+			</li>
+		</ul>
+	</div>	
+	<div class="divider"></div>		
+	<div class="tab_content auto">
+		<ul class="auto">
+			<li class="">
+				<span>111</span>
+			</li>
+			<li class="hide">
+				<span>222</span>
+			</li>
+			<li class="hide">
+				<span>333</span>
+			</li>
+		</ul>
+	</div>
+	
+</body>	
+<script type="text/javascript">
+	var tab_index;
+	$(".hearder_tab ul li").click(function(){
+		if($(this).hasClass("active")){
+			return
+		}else{
+			tab_index = $(this).index();
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".tab_content ul li").eq(tab_index).show().siblings().hide();
+		}
+	})
+</script>
+</html>		

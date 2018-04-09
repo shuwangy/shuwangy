@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="divport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>订单列表</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js" ></script>
+	</head>
+	<style type="text/css">
+	/*物流信息*/
+	.logistic_top{
+		padding: 15px 10px;
+		background: white;
+	}
+	.logistic_top span{
+		display: block;
+		line-height: 25px;
+	}
+	.adress_title {
+		width: 100%;
+		height: auto;
+		line-height: 45px;
+		border-bottom: 1px solid #dedede;
+		padding-left: 10px;
+		font-size: 15px;
+		color: #a8a8a8;
+		background: white;
+	}
+	
+	.logistic .logistic_ul {
+		width: 100%;
+		height: auto;
+		float: left;
+		background: white;
+	}
+	
+	.logistic .logistic_li {
+		display: block;
+		background-image: url(../image/adress2.png);
+		background-repeat: no-repeat;
+		background-size: 45px 100%;
+		width: 100%;
+		float: right;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-left: 50px;
+		padding-right: 10px;
+	}
+	.logistic .logistic_li:first-child .text{
+		color: #333333;
+	}
+	.logistic .logistic_li span {
+		display: block;
+		font-family: "苹方";
+		font-size: 13px;
+		line-height: 25px;
+		color: #828282;
+	}
+	.adress_left0 {
+		background-image: url(../image/adress1.png) !important;
+	}
+	
+	.adress_left1 {
+		background-image: url(../image/adress2.png) !important;
+	}
+	
+	.adress_left2 {
+		background-image: url(../image/adress3.png) !important;
+	}
+	
+	.adress_left3 {
+		background-image: url(../image/adress4.png) !important;
+	}
+	/*物流信息-end*/
+	</style>
+
+	<body>
+		<div class="logistic auto">
+			<div class="logistic_top auto">	
+				<span>物流公司：韵达快递 </span>
+				<span>物流单号：0000 0009 9998 888</span>
+			</div>
+			<div class="divider"></div>		
+			<div class='adress_title auto'>
+				<span>物流信息</span>
+			</div>
+			<div class="logistic_ul auto">
+				<div class="logistic_li">
+					<span class="text">济南市【济南运转中心】，正发往【新闻大厦】</span>
+					<span class="data ">2017.9.12   22:00:30</span>
+				</div>
+				<div class="logistic_li">
+					<span class="text">济南市【济南运转中心】，正发往【新闻大厦】</span>
+					<span class="data ">2017.9.12   22:00:30</span>
+				</div>
+				<div class="logistic_li">
+					<span class="text">济南市【济南运转中心】，正发往【新闻大厦】</span>
+					<span class="data ">2017.9.12   22:00:30</span>
+				</div>
+				<div class="logistic_li">
+					<span class="text">济南市【济南运转中心】，正发往【新闻大厦】</span>
+					<span class="data ">2017.9.12   22:00:30</span>
+				</div>
+				<div class="logistic_li">
+					<span class="text">济南市【济南运转中心】，正发往【新闻大厦】</span>
+					<span class="data ">2017.9.12   22:00:30</span>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script>
+		var len= $(".logistic_ul .logistic_li").length;
+		console.log(len)
+		if(len==1){
+			$(".logistic_ul .logistic_li").eq(0).addClass("adress_left0")
+		}
+		if(len>=2){
+			$(".logistic_ul .logistic_li").eq(0).addClass("adress_left3")
+			$(".logistic_ul .logistic_li").eq(len-1).addClass("adress_left2")
+		}
+	</script>
+</html>

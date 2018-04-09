@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>	
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js" ></script>
+</head>		
+<body>			
+		<div class="mui-content auto">
+			<header class="hearder_back">
+			    <a onclick="window.history.back()" class="back_icon"><img src="../image/back.png"/></a>
+			    <span class="hearder_li active"><a href="pro_detail.html">产品详情</a><label for=""></label></span>
+			    <span class="hearder_li"><a href="comment_list.html">评价</a><label for=""></label></span>
+			    <span class="hearder_li"><a href="trade_history.html">成交记录</a><label for=""></label></span>
+			    <a class="right_icon"><img src="../image/topcar.png"/></a>
+			</header>
+			<!--head-->
+			<div class="divider"></div>		
+			<div class="bamboo_prodetail_head auto ">
+				<div class="pro_title auto">
+					<span>科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干原味400g</span>
+				</div>
+				<div class="pro_price auto">
+					<span class="true">¥<label for="">99.00</label></span><br />
+					<span class="false">原价：<label for="">￥199.00</label></span>
+				</div>
+				<!--<div class="pro_num">
+					<span class="text_left auto">快递：0.00</span>
+				</div>
+				<div class="pro_num">
+					<span class="width50 text_left" >月销22203笔</span>
+					<span class="width50 text_right" >通辽  科尔沁</span>
+				</div>-->
+				<div class="pro_num">
+					<span class="width33 text_left auto">快递：0.00</span>
+					<span class="width33 text_center" >月销22203笔</span>
+					<span class="width33 text_right" >通辽  科尔沁</span>
+				</div>
+			</div>
+			
+			<!--specification-->
+			<div class="bamboo_prodetail_specification auto">
+		        <li onclick="show()" class="mui-table-view-cell">
+		            <a class="mui-navigate-right">
+		                <span>请选择：规格</span>
+		            </a>
+		        </li>
+			</div>
+			<div class="divider"></div>		
+			<!--评论-->
+			<div class="pro_detail_conmentbox auto">
+		        <li onclick="show()" class="mui-table-view-cell pro_detail_conmenttitle">
+		            <a class="mui-navigate-right">
+	                    <span class="mui-badge right">共<label for="">500</label>条评论</span>
+		                <span>评价</span>
+		            </a>
+		        </li>
+		        <div class="pro_detail_conment auto">
+        			<div class="conment auto">
+						<div class="conment_box auto">
+							<div class="conment_top auto">
+								<div class="headimg">
+									<img src="../upload/heard.jpg"/>
+								</div>
+								<div class="conment_top_content">
+									<span class="name">我想要静静</span>
+								  	<div class="star">
+								  		<span class="hide">2</span>
+								  		<img src="../image/star.png"/>
+								  		<img src="../image/star.png"/>
+								  		<img src="../image/stars.png"/>
+								  		<img src="../image/stars.png"/>
+								  		<img src="../image/stars.png"/>
+								  	</div>
+								</div>
+							</div>
+							<div class="conment_content auto">
+								<div class="conment_content_text auto">
+									<span>不足之处，每根牛肉干都是独立包装，浪费塑料袋，过度包装。包装袋撕起来也比较困难。风干牛肉干只要2层密封袋就可以了，吃起来也方便。建议直接上1000千克的大袋装。</span>
+								</div>
+								<div class="member_bottom auto">
+									<span>2017-01-12 23:21  选择重量：0.5kg 食品口味：甜辣味 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+        			<div class="conment auto">
+						<div class="conment_box auto">
+							<div class="conment_top auto">
+								<div class="headimg">
+									<img src="../image/personal.png"/>
+								</div>
+								<div class="conment_top_content">
+									<span class="name">晴天</span>
+								  	<div class="star">
+								  		<span class="hide">1.5</span>
+								  		<img src="../image/star.png"/>
+								  		<img src="../image/star.png"/>
+								  		<img src="../image/stars.png"/>
+								  		<img src="../image/stars.png"/>
+								  		<img src="../image/stars.png"/>
+								  	</div>
+								</div>
+							</div>
+							<div class="conment_content auto">
+								<div class="conment_content_text auto">
+									<span>风干牛肉干只要2层密封袋就可以了，吃起来也方便。建议直接上1000千克的大袋装。</span>
+								</div>
+								<div class="member_bottom auto">
+									<span>2017-01-12 23:21  选择重量：0.5kg 食品口味：甜辣味 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go_button auto">
+						<span>查看全部评价</span>
+					</div>
+		        </div>
+		        
+			</div>
+			<div class="divider"></div>		
+			<div class="store_introduction auto">
+		        <div onclick="location=''" class="store_introduction_top auto">
+		        	<img class="logo" src="../image/logo.png" alt="" />
+		        	<span class="name auto">科尔沁牛肉干自营店</span>
+		        	<span class="goood auto">好评率：80%</span>
+		        </div>
+		        <div class="store_introduction_list auto">
+		        	<ul class="auto">
+		        		<li>
+		        			<span class="name">商品</span>
+		        			<span class="num yellows">3.90<img src="../image/u.png"/></span>
+		        		</li>
+		        		<li>
+		        			<span class="name">服务</span>
+		        			<span class="num greens">1.62<img src="../image/b.png"/></span>
+		        		</li>
+		        		<li>
+		        			<span class="name">物流</span>
+		        			<span class="num yellows">3.54<img src="../image/e.png"/></span>
+		        		</li>
+		        	</ul>
+		        </div>
+		        <div class="store_introduction_button auto">
+		        	<span><img src="../image/proall.png"/>全部商品</span>
+		        	<span><img src="../image/stores.png"/>进入店铺</span>
+		        </div>
+			</div>
+			
+			
+			
+			<!--specification-info-->
+			<div class="pro_detail_imglist auto">
+				
+		        <div class="pro_detail_imglist_title auto">
+		        	<img src="../image/sheng.png"/>
+		        	<span class="title">上拉查看图文详情</span>
+		        </div>
+		        
+		        
+		        <div class="pro_detail_imglist_box auto">
+		        	<img src="../upload/ss.png" alt="" />
+		        	<img src="../upload/sss.png" alt="" />
+		        </div>
+		        
+		        
+			</div>
+			
+			<!--end-->
+		</div>
+	    
+		<div class="prodetail_bottom">
+			<div class="left">
+				<div class="prodetail_bottom_li">
+					<img src=" ../image/comm.png"/>
+					<span>客服</span>
+				</div>
+				<div class="prodetail_bottom_li">
+					<img src="../image/storess.png"/>
+					<span>店铺</span>
+				</div>
+				<div onclick="location='mycar.html'" class="prodetail_bottom_li">
+					<img src="../image/add_car.png"/>
+					<span>购物车</span>
+				</div>
+			</div>
+			<div class="right">
+				<li onclick="show()" class="add_car">
+					<span>加入购物车</span> 
+				</li>
+				<li onclick="show()" class="buy">
+					<span>立即购买</span> 
+				</li>
+			</div>
+		</div>
+		<div class="popup_bj hide">
+			<div class="popup_box prodetail_popup auto">
+    			<div class=" prodetail_popup_top auto">
+    				<div class="prodetail_popup_topbox auto">
+						<img onclick="hide()" class="cancel" src="../image/delete.png"/>
+	    				<div class="pro_img">
+	    					<img src="../upload/pro1.png" alt="" />
+	    				</div>
+	    				<div class="prodetail_popup_toptext">
+		    				<div class="popup_price auto ">
+		    					<span>¥<label>50.00</label></span>
+		    				</div>
+		    				<div class="popup_num auto">
+		    					<span>库存1999件</span>
+		    				</div>
+		    				<div class="popup_detail auto">
+		    					<span>请选择食品口味</span>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="specifications auto">
+    				<div class="specifications_li auto">
+    					<div class="specifications_li_name auto">
+    						<span>颜色</span>
+    					</div>
+    					<div class="specifications_li_id auto">
+    						<span data-id="1">黑色</span>
+    						<span data-id="2">黄色</span>
+    						<span data-id="3">白色</span>
+    						<span data-id="4">棕色</span>
+    						<span data-id="5">白色</span>
+    					</div>
+    				</div>
+    				<div class="specifications_li auto">
+    					<div class="specifications_li_name auto">
+    						<span>尺寸</span>
+    					</div>
+    					<div class="specifications_li_id auto">
+    						<span data-id="21">21</span>
+    						<span data-id="22">22</span>
+    						<span data-id="23">23</span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="bamboo_prodetail_popup_addnum auto">
+    				<span class="name">购买数量</span>
+    				
+					<div class="mycar_li_num prodetails_num">
+						<span class="sub"><img src="../image/sub.png" alt="" /></span>
+						<span class="num"><input disabled="disabled" type="number" value="1" /></span>
+						<span class="add"><img src="../image/add.png" alt="" /></span>
+					</div>
+    			</div>
+				<div onclick="location='confirm.html'" class="prodetail_popup_bottom">
+					<li class="add_car">
+						<span>确定</span> 
+					</li>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+  	var len = $(".pro_detail_conment .conment").length;
+  	console.log(len)
+  	for(var i=0;i<len;i++){
+  		var num = $(".pro_detail_conment .conment").eq(i).find(".star span").text();
+  		
+  		for(var m= 0;m<num;m++){
+  			$(".pro_detail_conment .conment").eq(i).find(".star img").eq(m).attr("src","../image/star.png")
+  		}
+  		if(num%1!=0){
+  			var x =parseInt(num)
+  			$(".pro_detail_conment .conment").eq(i).find(".star img").eq(x).attr("src","../image/stars.png")
+  		}
+  		
+  	}
+  	//
+  	
+	//数量
+	$(".add").unbind('click').click(function(){
+		$(".mycar_list").each(function(){
+		if($(this).find(".checkbox").prop("checked")==true){
+			carid = $(this).find("input[radio]").prop("id");
+			console.log($(this).find(".checkbox").prop("id"));
+			 $(this).find(".mycar_list_nameradio img").attr("src","../image/true.png")
+			 alprice =  $(this).find("#total_price_1").val();
+			$("#payment_total_price").val(alprice)
+		}
+			console.log(alprice)
+	})
+		var num = Number($(this).siblings(".num").find("input").val())+1;
+			$(this).siblings(".num").find("input").val(num);
+	})
+	$(".sub").unbind('click').click(function(){
+		$(".mycar_list").each(function(){
+		if($(this).find(".checkbox").prop("checked")==true){
+			carid = $(this).find("input[radio]").prop("id");
+			console.log($(this).find(".checkbox").prop("id"));
+			 $(this).find(".mycar_list_nameradio img").attr("src","../image/true.png")
+			 alprice =  $(this).find("#total_price_1").val();
+			$("#payment_total_price").val(alprice)
+		}
+			console.log(alprice)
+	})
+		var num = Number($(this).siblings(".num").find("input").val())-1;
+		console.log(num)
+		if(num == 0){
+			return
+		}else{
+			$(this).siblings(".num").find("input").val(num);
+		}
+	})
+	//购物车规格
+	var attrs = new Array();
+	var attrlen = $(".specifications_li").length;
+	
+	$(".specifications_li_id span").unbind('click').click(function(){
+		if($(this).hasClass("active")){
+		}else{
+			$(this).addClass("active").siblings().removeClass("active")
+		}
+		for(var i=0;i<attrlen;i++){
+			var id = new Object();
+			id = "";
+			if($(".specifications_li").eq(i).find(".active").length !=0){
+				id = $(".specifications_li").eq(i).find(".active").attr("data-id");
+			}else{
+			}
+			attrs[i]=id;
+		}
+		console.log(attrs)
+	})	
+	
+	
+
+function show(){
+	$(".popup_bj").removeClass("hide");
+}
+function hide(){
+	$(".popup_bj").addClass("hide");
+}
+    </script>
+</html>		

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>评论展示</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js"></script>
+	</head>
+
+	<body>
+		<div class="storelist auto">
+			<div class="storelist_box auto">
+				<div class="storelist_top auto">
+					<span class="go">进店</span>
+					<div class="headimg">
+						<img src="../image/logo.png" />
+					</div>
+					<div class="storelist_top_content">
+						<span class="name">七匹狼官方旗舰店</span>
+						<span class="text">主营：男装</span><span class="text">店主：张先生</span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="demo-test-gallery" class="demo-gallery">
+
+						<a href="">
+							<img src="../image/1.jpg" alt="" />
+							<span class="price">¥ 99.00</span>
+						</a>
+						<a href="">
+							<img src="../image/2.jpg" alt="" />
+							<span class="price">¥ 99.00</span>
+						</a>
+						<a href="">
+							<img src="../image/3.jpg" alt="" />
+							<span class="price">¥ 99.00</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			auto_top();
+		};
+
+		function auto_top() {
+			var imgs = $(".figure img");
+			$(".figure img").each(function() {
+				var imgs = new Image();
+				imgs.src = $(this).attr("src");
+				var w = imgs.width,
+					h = imgs.height;
+				t = w - h;
+				if(t > 0) {
+					$(this).css('height', '100%');
+				} else {
+					$(this).css('width', '100%');
+				}
+			})
+		};
+	</script>
+
+</html>

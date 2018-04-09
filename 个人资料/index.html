@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+</head>		
+<style type="text/css">
+</style>
+<body style="background: white;">		
+	<div class="user_info auto">
+		<div class="user_info_header auto">
+			<span class="user_info_name">我的头像</span>
+			<div class="user_info_right">
+				<input style="display: none;" id="proewm_input" onchange="javascript:setImagePreview();" type="file" id="" value="" />
+			 	<img onclick="fileSelect(this)" class="phpto" id="proewm" name="proewm" src="../image/header.jpeg" alt="" />
+				<img class="right" src="../image/right.png"/>
+			</div>
+		</div>
+		<div class="xian"></div>
+		<div class="user_info_list auto">
+			<span class="name">用户名称</span>
+			<div class="user_info_right">
+				<span>我想要静静</span>
+			</div>
+		</div>
+		<div class="divider"></div>		
+		<div class="user_info_list auto">
+			<span class="name">电子邮箱</span>
+			<div class="user_info_right">
+				<span>admin@ishop.com</span>
+				<img class="right" src="../image/right.png"/>
+			</div>
+		</div>
+		<div class="xian"></div>
+		<div class="user_info_list auto">
+			<span class="name">admin@ishop.com</span>
+			<div class="user_info_right">
+				<span>18866411550</span>
+				<img class="right" src="../image/right.png"/>
+			</div>
+		</div>
+		<div class="divider"></div>		
+		<div class="user_info_list auto">
+			<span class="name">所在地区</span>
+			<div class="user_info_right">
+				<span>山东  济南</span>
+				<img class="right" src="../image/right.png"/>
+			</div>
+		</div>
+	</div>
+</body>	
+		<script> 
+		var name;
+		function fileSelect(e) {
+			name = e.getAttribute("name")
+			document.getElementById("proewm_input").click();
+		}
+
+		function setImagePreview() {
+			var docObj = document.getElementById(name+"_input");
+			var imgObjPreview = document.getElementById(name);
+			if(docObj.files && docObj.files[0]) {
+				imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+			} 
+			return true;
+		}
+		</script> 
+</html>		

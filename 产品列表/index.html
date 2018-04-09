@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css"/>
+</head>		
+<style type="text/css">
+	
+/*产品列表*/
+.pro_row {
+    background: #ffffff;
+    float: left;
+}
+.pro_card {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.innerCard {
+    background: #fff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+    float: left;
+    width: 100%;
+    height:110px;
+}
+.proimg_box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pro_card .proimg_box {
+    width:90px;
+    height: 90px;
+    position: absolute;
+    z-index: 10;
+    top:10px;
+    left: 10px;
+}
+.pro_card .proimg_box img{
+    width:90px;
+    height: 90px;
+}
+.protitle {
+    text-align: left;
+    font-size: 14px;
+    max-height: 50px;
+    line-height: 21px;
+    margin-top: 5px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 0 10px 0 110px;
+    min-height: 42px;
+}
+.proprice {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 10px 0 110px;
+    padding-bottom: 5px;
+    color: #666666;
+}
+.proprice span{
+    font-size: 15px;
+    color: #fb1818;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.proprices {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    padding: 0 10px 0 110px;
+    color: #a8a7a3;
+    padding-bottom: 5px;
+    text-decoration: line-through;
+}
+.probottom {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    padding: 0 10px 0 110px;
+    color: #a8a7a3;
+    padding-bottom: 5px;
+}
+/*产品列表-end*/
+</style>
+<body>	
+	
+	<div class="pro auto">
+		<ul class="pro_row auto">		
+			<li class="pro_card" tapmod="card_hover" onclick="location='pro_detail.html'">		
+				<div class="innerCard">	
+					<div class="proimg_box"><img src="http://img.18183.duoku.com/uploads/allimg/160307/62-16030G40239.jpg"></div>		
+					<div class="protitle">
+						<span>原味太谷饼山西特产传统糕点点心饼干蛋糕早餐面</span>
+					</div>	
+					<div class="proprice">
+						<span>5000</span>分
+					</div>	
+					<div class="proprices">
+						<span>市场价：899.00</span>
+					</div>	
+					<div class="probottom">
+						<span>9000人评价     好评率100%</span>
+					</div>	
+				</div>		
+			</li>		
+		</ul>
+	</div>
+	 
+</body>	
+</html>		

@@ -1,0 +1,65 @@
+.store_introduction{
+	height: auto;
+}
+/**/
+.store_introduction_top{
+	position: relative;
+	padding-left: 70px;
+	height: 70px;
+}
+
+.store_introduction_top .logo{
+	position: absolute;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #DEDEDE;
+	border-radius: 4px;
+}
+.store_introduction_top .name{
+	line-height: 25px;
+}
+.store_introduction_top .goood {
+	color: #999999;
+	line-height: 25px;
+}
+/**/
+.store_introduction_list{
+	height: auto;
+}
+.store_introduction_list ul li{
+	width: 33.33%;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+}
+.store_introduction_list ul li .name{
+	color: #999999;
+}
+.store_introduction_list ul li .num img{
+	height: 13px;
+	margin-left: 5px;
+	vertical-align: middle;
+	margin-top: -4px;
+}
+/**/
+.store_introduction_button{
+	height: auto;
+	margin-top: 10px;
+}
+.store_introduction_button span{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin-left: 6.5%;
+	line-height: 35px;
+	border:1px solid #dedede;
+	border-radius: 17.5px;
+}
+.store_introduction_button span img{
+	vertical-align: middle;
+	margin-right: 5px;
+	height: 15px;
+	margin-top: -3px;
+}
+

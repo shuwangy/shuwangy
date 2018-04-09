@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>评价商品</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script type="text/javascript" src="../评论展示/jquery-2.1.4.min.js" ></script>
+</head>		
+<style type="text/css">
+	
+/*产品评价*/
+
+	.pro_comment_li{
+		background: white;
+		padding: 0 10px;
+		margin-bottom: 10px;
+	}
+	.pro_comment_li_top{
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #eaeaea;
+	}
+	.pro_comment_li_top .leftname{
+		color: #333333;
+		margin-right: 10px;
+		float: left;
+	}
+	.pro_comment_li_top ul {
+	  float: left;
+	  overflow: hidden;
+	 }
+	.pro_comment_li_top ul li {
+	  float: left;
+	  list-style: none;
+	  width: 14px;
+	  height: 13px;
+	  margin-right: 5px;
+	  margin-top:18px;
+	  background: url(../image/starss.png);
+	  background-position: 0 -15px;
+	 }
+	.pro_comment_li_top ul li a {
+	  display: block;
+	  width: 100%;
+	  padding-top: 27px;
+	  overflow: hidden;
+	 }
+	.pro_comment_li_top ul li.light {
+	  background-position: 0 0px;
+	 }
+	.pro_comment_li_content{
+		height: 90px;
+		padding: 5px 0;
+		border-bottom: 1px solid #eaeaea;
+	}
+	.pro_comment_li_proimg{
+		position: absolute;
+	}
+	.pro_comment_li_proimg img{
+		height: 70px;
+	}
+	.pro_comment_li_context{
+		padding:0px 0px 0px 80px;
+		position: relative;
+	}
+	.pro_comment_li_context span{
+		display: block;
+	}
+	.pro_comment_li_context .text{
+		line-height: 25px;    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+		
+	}
+	.pro_comment_li_context .price{
+		line-height: 25px;
+		color: #fb1818;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.pro_comment_bottom{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: #ffb205;
+		line-height: 50px;
+		text-align: center;
+		color: #ffffff;
+	}
+	.pro_comment_areatext{
+		height: 100px;
+		background: white;
+	}
+	.pro_comment_areatext textarea{
+		width: 100%;
+		height: 100px;
+		border: 0px;
+		font-size: 13px;
+		line-height: 20px;
+		padding: 10px 0px;
+	}
+	.pro_comment_store{
+		padding: 0 10px;
+		background: #ffffff;
+	}
+	.pro_comment_store .li{
+		width: 100%;
+		line-height: 50px;
+		border-top: 1px solid #eaeaea;   
+		 float: left;
+	}
+	.pro_comment_store .li .leftname{
+		color: #333333;
+		margin-right: 10px;
+		float: left;
+	}
+	.pro_comment_store .li:first-child{
+		border: 0px;
+	}
+	.pro_comment_store ul {
+	  float: left;
+	  overflow: hidden;
+	 }
+	.pro_comment_store ul li {
+	  float: left;
+	  list-style: none;
+	  width: 14px;
+	  height: 13px;
+	  margin-right: 5px;
+	  margin-top:18px;
+	  background: url(../image/starss.png);
+	  background-position: 0 -15px;
+	 }
+	.pro_comment_store ul li a {
+	  display: block;
+	  width: 100%;
+	  padding-top: 27px;
+	  overflow: hidden;
+	 }
+	.pro_comment_store ul li.light {
+	  background-position: 0 0px;
+	 }
+/*产品评价-end*/
+</style>
+<body>		
+		<div name="pro" class="pro_comment_li auto li">
+			<div class="pro_comment_li_top auto">
+				<span class="leftname">产品评分</span>
+				<ul>
+					<li class="light"><a onclick="atrs(this)">1</a></li>
+					  <li><a name="2" onclick="atrs(this)">2</a></li>
+					  <li><a onclick="atrs(this)">3</a></li>
+					  <li><a onclick="atrs(this)">4</a></li>
+					  <li><a onclick="atrs(this)">5</a></li>
+				</ul>
+			</div>
+			<div class="pro_comment_li_content auto">
+				<div class="pro_comment_li_proimg">
+					<img src="../image/1.jpg"/>
+				</div>
+				<div class="pro_comment_li_context">
+					<span class="text">科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干原味400g</span>
+					<span class="price">￥23.00</span>
+				</div>
+			</div>
+			<div class="pro_comment_areatext auto">
+				<textarea placeholder="这次买的产品满意吗？写点心得给其他客户参考吧，长度在5~500字之间"></textarea>
+			</div>
+		</div>
+		<div name="pro" class="pro_comment_li auto li">
+			<div class="pro_comment_li_top auto">
+				<span class="leftname">产品评分</span>
+				<ul>
+					<li class="light"><a onclick="atrs(this)">1</a></li>
+					  <li><a name="2" onclick="atrs(this)">2</a></li>
+					  <li><a onclick="atrs(this)">3</a></li>
+					  <li><a onclick="atrs(this)">4</a></li>
+					  <li><a onclick="atrs(this)">5</a></li>
+				</ul>
+			</div>
+			<div class="pro_comment_li_content auto">
+				<div class="pro_comment_li_proimg">
+					<img src="../image/1.jpg"/>
+				</div>
+				<div class="pro_comment_li_context">
+					<span class="text">科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干原味400g</span>
+					<span class="price">￥99.00</span>
+				</div>
+			</div>
+			<div class="pro_comment_areatext auto">
+				<textarea placeholder="这次买的产品满意吗？写点心得给其他客户参考吧，长度在5~500字之间"></textarea>
+			</div>
+		</div>
+		<div class="pro_comment_store auto">
+			<div name="store" class="li store">
+				<span class="leftname">店铺评分</span>
+				<ul>
+					<li class="light"><a onclick="atrs(this)">1</a></li>
+					  <li><a name="2" onclick="atrs(this)">2</a></li>
+					  <li><a onclick="atrs(this)">3</a></li>
+					  <li><a onclick="atrs(this)">4</a></li>
+					  <li><a onclick="atrs(this)">5</a></li>
+				</ul>
+			</div>
+			<div name="get" class="li get">
+				<span class="leftname">物流评分</span>
+				<ul>
+					<li class="light"><a onclick="atrs(this)">1</a></li>
+					  <li><a name="2" onclick="atrs(this)">2</a></li>
+					  <li><a onclick="atrs(this)">3</a></li>
+					  <li><a onclick="atrs(this)">4</a></li>
+					  <li><a onclick="atrs(this)">5</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="pro_comment_bottom hide">
+			<span>发表评价</span>
+		</div>
+		
+</body>	
+ <script>
+	var num=finalnum = tempnum= 0;
+	var lis;
+	function atrs(e){
+		if($(e).parents(".li").attr("name")=="store"){
+			lis= $(".pro_comment_store .store ul li")
+		}
+		if($(e).parents(".li").attr("name")=="get"){
+			lis= $(".pro_comment_store .get ul li")
+		}
+		if($(e).parents(".li").attr("name")=="pro"){
+			var index = $(e).parents(".pro_comment_li").index();
+			console.log(index);
+			lis= $(".pro_comment_li").eq(index).find("li")
+		}
+		var num =parseInt($(e).text());
+		fnShow(num)
+	}
+	function fnShow(num) {
+		finalnum = num || tempnum;//如果传入的num为0，则finalnum取tempnum的值
+		if(finalnum==0){
+			finalnum=1
+		}
+		for (var i = 0; i < lis.length; i++) {
+		   lis[i].className = i < finalnum? "light" : "";
+		}
+	}
+</script>
+</html>		

@@ -1,0 +1,77 @@
+
+/*店铺搜索*/
+.storelist{
+	height: auto;
+	padding: 0 10px;
+	background: white;
+}
+/**/
+.storelist_top{
+	position: relative;
+	padding-top: 15px;
+}
+.storelist_top .headimg{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+}
+.storelist_top .headimg img{
+	width: 45px;
+	height: 45px;
+
+}
+.storelist_top .go{
+	position: absolute;
+	right: 10px;
+	border: 1px solid #ffaa00;
+	color: #ffaa00;
+	padding: 7px 15px;
+	border-radius: 15px;
+	top: 20px;
+}
+/**/
+.storelist_top_content{
+	padding: 0 0 0 55px;
+}
+.storelist_top_content .name{
+	display: block;
+	font-weight: bold;
+}
+.storelist_top_content .text{
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 13px;
+	color: #666666;
+	line-height: 35px;
+}
+/**/
+.row{
+	width: 100%;
+	height: auto;
+}
+.row .demo-gallery {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.row .demo-gallery a{
+	display: block;
+	width: 33.33%;
+	float: left;
+	padding: 5px;
+	position: relative;
+}
+.row .demo-gallery a .price{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	background: rgba(255,255,255,0.8);
+	color: black;
+	padding: 5px;
+	font-size: 13px;
+}
+.row .demo-gallery a img{
+	width: 100%;
+	height: 30.33vw;
+}
+/*店铺搜索-end*/

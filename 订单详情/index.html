@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>订单列表</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+</head>		
+<style type="text/css">
+	
+/*订单详情*/
+.order_detail_top{
+	height: auto;
+	position: relative;
+}
+.order_detail_top span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 10px;
+	align-items:center; 
+	display: -webkit-flex;
+}
+.order_detail_top span img{
+	width: auto;
+	height: 30px;
+	float: left;
+	right: 20px;
+	top: 15%;
+	margin-right: 5px;
+}
+.order_detail_top img{
+	width: 100%;
+	float: left;
+}
+.order_detail_location{
+	height: auto;
+	padding: 10px 10px;
+	background: white;
+}
+.order_detail_location span{
+	display: block;
+	line-height: 25px;
+	padding-left: 25px;
+}
+.order_detail_location .name{
+	color: #333333;
+	font-size: 14px;
+}
+.order_detail_location .name label{
+	margin-left: 10px;
+}
+.order_detail_location .address{
+	color: #828282;
+	font-size: 13px;
+	position: relative;
+	line-height: 18px;
+	margin-top: 5px;
+}
+.order_detail_location .address .location_icon{
+	position: absolute;
+	left: 0px;
+	top: -3px;
+	height: 18px;
+}
+
+/**/
+
+	.order_detail_li{
+		background: white;
+		padding: 0 10px;
+	}
+	.order_detail_li_top{
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.order_detail_li_top img{
+		height: 18px;
+		vertical-align: middle;
+		margin-top: -3px;
+		margin-right: 10px;
+	}
+	.order_detail_li_top .right{
+		height: 14px;
+	}
+	.order_detail_li_top .leftname{
+		color: #333333;
+		margin-right: 10px;
+	}
+	.order_detail_li_content{
+		height: 80px;
+	}
+	.order_detail_li_proimg{
+		position: absolute;
+	}
+	.order_detail_li_proimg img{
+		height: 70px;
+	}
+	.order_detail_li_context{
+		padding:0px 0px 0px 80px;
+		position: relative;
+	}
+	.order_detail_li_context span{
+		display: block;
+	}
+	.order_detail_li_context .num{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+	.order_detail_li_context .text{
+		line-height: 25px;
+		
+	}
+	.order_detail_li_context .price{
+		line-height: 25px;
+		color: #fb1818;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	/**/
+	.order_detail_list{
+		line-height: 45px;
+		padding: 0 10px;
+		background: white;
+		position: relative;
+		color: #666666;
+	}
+	.order_detail_list .left{
+		float: left;
+	}
+	.order_detail_list .right{
+		float: right;
+	}
+	.after:after{
+		content: "";
+		height: 1px ;
+		background: #dedede;
+		position: absolute;
+		bottom: 0px;
+		z-index: 10;
+		left: 10px;
+		right: 10px;
+	}
+/*订单详情-end*/
+</style>
+<body>		
+		<div class="order_detail_top auto">
+			<span><img src="../image/statius_pay.png" alt="" />等待卖家发货 </span>
+			<img src="../image/order_detailbj.png" alt="" />
+		</div>
+		<div class="order_detail_location auto">
+			<span class="name">王义书 <label>18866411550</label></span>
+			<span class="address">
+				<img class="location_icon" src="../image/order_detaillocation.png" alt="" />
+				<label for="">山东省济南市菏泽市定陶区黄店镇付楼行政村</label>
+			</span>
+		</div>
+		<div class="divider"></div>		
+		
+		<div class="order_detail_li auto">
+			<div class="order_detail_li_top auto">
+				<img src="../image/order_detailstore.png"/>
+				<span class="leftname">科尔沁牛肉干自营店</span>
+				<img class="right" src="../image/order_detailright.png"/>
+			</div>
+			<div class="order_detail_li_content auto">
+				<div class="order_detail_li_proimg">
+					<img src="../image/1.jpg"/>
+				</div>
+				<div class="order_detail_li_context">
+					<span class="num">x1</span>
+					<span class="text">科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干原味400g</span>
+					<span class="price">￥99.00</span>
+				</div>
+			</div>
+		</div>
+		<div class="order_detail_list after auto">
+			<span class="left">商品应付金额</span>
+			<span class="right">￥99.00</span>
+		</div>
+		<div class="order_detail_list after auto">
+			<span class="left">运费</span>
+			<span class="right">￥10</span>
+		</div>
+		<div class="order_detail_list auto">
+			<span class="left">实付金额（含运费)</span>
+			<span class="right">￥109.00</span>
+		</div>
+		<div class="divider"></div>		
+		<div class="order_detail_list auto">
+			<span>发票：</span>
+			<span>山东社动电商信息技术有限公司</span>
+		</div>
+		<div class="divider"></div>		
+		<div class="order_detail_list auto">
+			<span>付款方式：</span>
+			<span>微信支付</span>
+		</div>
+		<div class="divider"></div>		
+		<div class="order_detail_list auto">
+			<span>订单编号：88999699882 </span>
+		</div>
+		<div class="order_detail_list auto">
+			<span>下单时间：2017-12-20  09:00</span>
+		</div>
+		<div class="order_detail_list auto">
+			<span>支付时间：2017-12-20  09:00</span>
+		</div>
+		
+</body>	
+</html>		
